@@ -10,7 +10,7 @@ posts = instaloader.Profile.from_username(L.context, "profile here").get_posts()
 for post in posts:
    old = (post.date)  
 
-SINCE = (2021,5,20)
+SINCE = datetime.now()
 temp = old
 while 1 > 0:
    new = False
